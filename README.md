@@ -11,8 +11,8 @@ Count the number of 'on' cells surrounding each cell on the board. If the number
 ## Running Locally
 
 ```
-$ git clone git@github.com:creviera/test.git # or clone your own fork
-$ cd test
+$ git clone git@github.com:alliecrevier/next-gen.git
+$ cd next-gen
 $ npm install
 $ npm start
 ```
@@ -21,20 +21,19 @@ The app should now be running on [localhost:5000](http://localhost:5000/). Click
 
 ## Demo hosted in Heroku
 
-`https://creviera.herokuapp.com/`
+https://gol-next-gen.herokuapp.com/
 
 ## API
 
 URL: 
 `http://<hostname>/nextgen`
 
-If running locally, use `https://localhost:5000/nextgen` or the relative path `nextgen` (if client is on the same host). Otherwise use `https://creviera.herokuapp.com/nexgen`.
+If running locally, use `https://localhost:5000/nextgen` or the relative path `nextgen` (if client is on the same host). Otherwise use `https://gol-next-gen.herokuapp.com/nexgen`.
 
 e.g. local client hitting the API:
-```
-var liveCells = [[2,1],[2,2],[2,3]];`https://creviera.herokuapp.com/nexgen`.
+```node
+var liveCells = [[2,1],[2,2],[2,3]];
 
-e.g. client hitting the API l
 var data = {
     'M': 5,
     'N': 5, 
@@ -52,7 +51,7 @@ $.ajax({
 
 ```
 
-## Documentation used when working on this project
+## Resources
 
 - [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
 - [Best Practices for Node.js Development](https://devcenter.heroku.com/articles/node-best-practices)
